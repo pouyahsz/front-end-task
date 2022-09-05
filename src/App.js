@@ -17,7 +17,7 @@ function App() {
     },
     {
       id:"m2",
-      title: "Jane Doe",
+      title: "Emma Doe",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a volutpat mauris, at molestie lacus. Nam vestibulum sodales odio ut pulvinar",
       level:16,
       points:2453,

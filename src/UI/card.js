@@ -8,10 +8,10 @@ import SecondLayer from './secondLayer';
 const Card = ({ data }) => {
     const [showMoreInfo, setShowMoreInfo] = useState(false);
     const secondLayerInfo = {
-        awards: 2,
-        matches: 27,
-        pals: 123,
-        coffee: "∞",
+        awards: data.awards,
+        matches: data.matches,
+        pals: data.pals,
+        coffee: data.coffee,
         color:data.color
     }
     const visibilityHandler = () => {

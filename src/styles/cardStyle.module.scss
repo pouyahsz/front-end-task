@@ -1,0 +1,148 @@
+@import "mixins";
+@import "variables";
+
+// ********************************* cards section *******************************
+.cards {
+  @include flex(center, center, column);
+}
+// ********************************* cards frame *******************************
+.card-frame {
+  height: 250px;
+  width: 450px;
+  box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+  background-color: white;
+  margin: 20px 0;
+  @include flex(center, flex-start, row);
+// ********************************* profile section *******************************
+
+  .user {
+    width: 30%;
+    height: 100%;
+    position: relative;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    @include flex(space-evenly, center, column);
+    .badg {
+      background: rgba(0, 0, 0, 0.15);
+      border-radius: 100px;
+      p {
+        margin: 0;
+        font-size: 0.75em;
+        color: white;
+        padding: 0.125rem 0.75rem;
+        font-weight: bold;
+      }
+    }
+    
+    &::after{
+      content: '';
+      position: absolute;
+      width: 2px;
+      height: 200px;
+      display: inline-block;
+      background-color: rgba(0, 0, 0, 0.02);
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+// ********************************* card details section *******************************
+
+  .details {
+    width: 70%;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+    .first-layer {
+      padding: 20px 16px 16px;
+      .first-Layer-title {
+        text-align: center;
+        h3 {
+          font-size: 2em;
+          font-weight: bold;
+          margin: 0;
+        }
+      }
+      .description {
+        margin-top: 30px;
+        p{
+          font-weight: 100 !important;
+          font-size: .9rem;
+          line-height: 1.5;
+        }
+      }
+      .more-info {
+        position: absolute;
+        bottom: 16px;
+        right: 16px;
+        p {
+          margin: 0;
+          font-size: 0.9em;
+        }
+      }
+    }
+// ********************************* card overlay *******************************
+
+    .hidden {
+      width: 0 !important;
+      transition: all 0.4s;
+    }
+    .second-layer {
+      color: white;
+      height: 100%;
+      width: 315px;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      transition: width 0.4s;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+      .container {
+        padding: 20px 16px 16px;
+        width: 283px;
+        .second-Layer-title {
+          width: 283px;
+          text-align: center;
+
+          h3 {
+            font-size: 2em;
+            font-weight: bold;
+            margin: 0;
+          }
+        }
+        .specifications {
+          width: 283px;
+          @include flex(space-between, center, row);
+          margin: 10px 0;
+          p {
+            margin: 0;
+            font-size: 0.8rem;
+          }
+        }
+        .informations {
+          width: 283px;
+          margin-top: 10px;
+          @include flex(space-between, flex-start, row);
+          .item {
+            height: 110px;
+            @include flex(space-between, center, column);
+            img {
+              width: 35px;
+            }
+            h5 {
+              font-size: 0.75rem;
+              margin-bottom: 0;
+            }
+            span {
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

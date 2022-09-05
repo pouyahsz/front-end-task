@@ -1,0 +1,11 @@
+@import 'variables';
+*{
+    box-sizing: border-box;
+    font-family: Abel, Arial, Verdana, sans-serif;
+
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: $page-background;
+}

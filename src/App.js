@@ -19,11 +19,11 @@ function App() {
       id:"m2",
       title: "Jane Doe",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a volutpat mauris, at molestie lacus. Nam vestibulum sodales odio ut pulvinar",
-      level:13,
-      points:5312,
-      awards:2,
-      matches: 27,
-      pals:123,
+      level:16,
+      points:2453,
+      awards:6,
+      matches: 18,
+      pals:87,
       coffee:"∞",
       color:"linear-gradient(#92bCa6, #A2CCB6)"
     }

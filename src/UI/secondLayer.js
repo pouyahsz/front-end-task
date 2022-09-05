@@ -39,7 +39,7 @@ const SecondLayer = ({ visibility, info }) => {
         <div className={`${styles["second-layer"]} ${!visibility && styles.hidden}`} style={{background:info.color}}>
             <div className={styles.container}>
                 <div className={styles["second-Layer-title"]}>
-                    <h3>Jane Doe</h3>
+                    <h3>{info.title}</h3>
                 </div>
                 <div className={styles.specifications}>
                     <p>Group Name</p>

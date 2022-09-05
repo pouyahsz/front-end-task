@@ -8,6 +8,7 @@ import SecondLayer from './secondLayer';
 const Card = ({ data }) => {
     const [showMoreInfo, setShowMoreInfo] = useState(false);
     const secondLayerInfo = {
+        title:data.title,
         awards: data.awards,
         matches: data.matches,
         pals: data.pals,
